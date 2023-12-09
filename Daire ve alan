@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main() {
+   int r, pi=3.14;
+   float cevre,alan;
+   printf("dairenin çevresini VE alanını hasaplayan program\n");
+   printf("Yarı çapı giriniz:");
+   scanf("%d",&r);
+   
+   cevre=2*pi*r;
+   printf("Dairenin çevresi %.1f\n",cevre);
+   alan=pi*r*r;
+   printf("Dairenin alanı %.1f",alan);
+
+    return 0;
+}
