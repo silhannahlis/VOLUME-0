@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<math.h>
+
+int main() {
+   int a,b,c,A,C;
+   
+   printf("Dik üçgenin hipotenüsünü bulma VE alanını hasaplayan program\n");
+   printf("üçgenin a kenarını giriniz:");
+   scanf("%d",&a);
+   printf("üçgenin b kenarını giriniz:");
+   scanf("%d",&b);
+   
+   c= sqrt(a*a+b*b);
+   printf("Üçgenin hipotenüsü %d\n",c);
+   A= (a*b)/2;
+   printf("Üçgenin alanı %d\n",A);
+   C=a+b+c;
+   printf("Üçgenin çevresi %d",C);
+   
+  
+
+    return 0;
+}
