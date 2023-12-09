@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<math.h>
+
+int main() {
+   int a,i=1,s=0,t=0;
+   
+   printf("MÜKEMMEL sayısını bulma\n");
+   printf("bir sayı giriniz:");
+   scanf("%d",&a);
+   while(i<=a){
+       if(a%i==00){
+           s+=1;
+           printf("%d\t",i);
+           t=t+(a/i);
+       }
+       i++;
+   }
+   if(2*a==t){
+       printf("\n%d sayısı bir MÜKEMMEL sayısıdır",a);
+   }
+   else{
+       printf("\n%d bir mükemmel sayı DEĞİLDİR",a);
+   }
+      return 0;
+}
