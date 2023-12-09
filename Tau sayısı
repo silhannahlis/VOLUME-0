@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+#include<math.h>
+
+int main() {
+   int a,i=1,s=0,t;
+   
+   printf("TAU sayısını bulma\n");
+   printf("bir sayı giriniz:");
+   scanf("%d",&a);
+   while(i<=a){
+       if(a%i==00){
+           s+=1;
+           printf("%d\t",i);
+       }
+       i++;
+   }
+   if(a%s==0){
+       printf("\n%d sayısı bir TAU sayısıdır",a);
+   }
+   else{
+       printf("\n%d bir Tau sayısı DEĞİLDİR",a);
+   }
+      return 0;
+}
