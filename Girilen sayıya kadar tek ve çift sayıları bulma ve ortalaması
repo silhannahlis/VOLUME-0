@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int x,i=1,top1=0,top2=0,s1=0,s2=0;
+    printf("Girilen sayıya kadar tek ve çift sayıları bulma ve ortalaması\n");
+    printf("bir sayı giriniz: ");
+    scanf("%d",&x);
+    while(i<=x){
+        if(i%2==0){
+            printf("%d\t",i);
+            s1++;
+            top1=top1+i;
+        }
+        if(i%2==1){
+            printf("\n%d\t",i);
+            s2++;
+            top2+=i;
+        }
+        i++;
+    }
+    printf("\nÇiftlerin adedi %d\n",s1);
+    printf("teklerin adedi %d\n",s2);
+    printf("çiftlerin toplamı: %d\n",top1);
+    printf("Teklerin toplamı: %d\n",top2);
+    printf("çift sayıların ortalaması:%d\n",top1/s1);
+    printf("tek sayıların ortalaması: %d",top2/s2);
+
+    return 0;
+}
