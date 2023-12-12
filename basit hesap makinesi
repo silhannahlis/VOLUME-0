@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+   double x,y;
+   char islem;
+   printf("Yapmak istediğiniz işlemi seçiniz:\n");
+   printf("+,-,*,/\n");
+   scanf("%c",&islem);
+   printf("birinci sayı:\n");
+   scanf("%lf",&x);
+   printf("ikinci sayı:\n");
+   scanf("%lf",&y);
+   printf("%c",islem);
+   
+   switch (islem){
+       case '+':
+       printf("sonuç: %.1lf",x+y);
+       break;
+       
+       case '-':
+       printf("sonuç: %.1lf",x-y);
+       break;
+       
+       case '*':
+       printf("sonuç: %.1lf",x*y);
+       break;
+       
+       case '/':
+       printf("sonuç: %.1lf",x/y);
+       break;
+       
+       default:
+       printf("girdiğiniz işlemi kontrol ediniz");
+   }
+
+    return 0;
+}
