@@ -1,0 +1,18 @@
+//n adet girilen sayının büyüğünü bulan pro...
+
+#include <stdio.h>
+int main()
+{
+   int i,n,max=0;
+   printf("-1 sayısı girilgiğinde program son bulur.\n");
+   printf("tamsayı giriniz:\n");
+   for(i=0;n!=-1;++i){
+      scanf("%d",&n);
+       if(n>max){
+           max=n;
+       }
+   }
+   printf("%d adet sayı girdiniz\n",--i);
+   printf("girdiğiniz en büyük sayı %d",max);
+       return 0;
+}
