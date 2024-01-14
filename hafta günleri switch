@@ -16,3 +16,23 @@ int main(){
         default:  printf("hatalı numara seçimi!"); break;
 
     }return 0;
+
+
+#include <stdio.h>
+
+int main(){
+    int gun;
+    printf("1 2 3 4 5 6 7 \n"); 
+    dene: printf("haftanın günleri için bir sayı seçiniz:\n"); scanf("%d",&gun);
+    
+    switch(gun){
+        case 1: printf("Günlerden Pazatesi"); break;
+        case 2: printf("Günlerden Salı"); break;
+        case 3: printf("Günlerden Çarşamba"); break;
+        case 4: printf("Günlerden Perşembe"); break;
+        case 5: printf("Günlerden Cuma"); break;
+        case 6: printf("Günlerden Cumartesi"); break;
+        case 7: printf("Günlerden Pazar"); break;
+        default:  printf("hatalı numara seçimi!\n");   goto dene;} //break;   }
+       
+    return 0;}
