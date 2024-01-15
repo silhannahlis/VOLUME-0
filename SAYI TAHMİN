@@ -1,0 +1,18 @@
+#include<stdio.h> 
+#include<time.h>
+#include<stdlib.h>
+int main(){
+int bs;
+ srand(time(NULL));
+ bs=rand() % 100;
+ //printf("bs=%d\n",bs);//rasgele atanan sayı                                                                                                                     
+ int tah,i;
+ printf("bir sayı dene");
+ for(i=0;tah!=bs;i++){
+     scanf("%d",&tah);
+     if(tah<bs){printf("daha büyük sayı dene");}
+     else if(tah>bs){printf("daha küçük bir sayı dene");}
+     else{}
+ }
+ printf("Tebrikler\n%d. deneme de ulaştın! ",i);
+}
