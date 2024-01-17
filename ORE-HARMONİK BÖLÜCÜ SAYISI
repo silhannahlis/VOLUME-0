@@ -1,0 +1,19 @@
+// ORE SAYISI/HARMONİK BÖLÜCÜ SAYISI
+#include <stdio.h>
+
+int main() {
+    int n,i,j=0;
+    double h=0,o=0;
+    printf("TAMsayı giriniz:");scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        if(n%i==0){  // printf("\ni:%d",i);
+            j++; h+=1.0/i; } }   //printf("\nj:%d",j); printf("\nh:%.2lf",h);
+          o=j/h;
+    if(o-(int)o==0){
+   // if(o==(int)o){
+        printf("\nORE SAİYISIDIR"); }
+    else{ printf("\nore sayısı DEĞİLDİR"); }
+            
+
+    return 0;
+}
