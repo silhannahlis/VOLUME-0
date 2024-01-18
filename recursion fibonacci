@@ -1,0 +1,19 @@
+// recursion ile n sayısına kadar fibonacci hesaplama
+#include <stdio.h>
+int fibonacci(int i);
+int main() {
+    int n,i=0;
+    printf("SAyI:");scanf("%d",&n);
+    for(i=0;i<=n;i++){
+      printf("%d ",fibonacci(i));  
+    }
+    return 0;
+}
+
+
+int fibonacci(int i){
+    int a,b=1,c=0,j=0;
+    for(j;j<=n;j++){
+       a=b+c; b=c; c=a;   }
+       return a;
+ }
