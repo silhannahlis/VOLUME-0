@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main(void) {
+   int satir,s,i,j;
+   printf("sayı gir:");scanf("%d",&satir);
+   
+   for(s=0;s<satir;s++){
+       for(i=0;i<s;i++){
+           printf("*");
+       }
+       //printf("\n");
+        for(j=satir-1;j>i;j--){
+            printf("0");
+    }
+        //printf("\n");
+        for(i=satir-1;i>s;i--){
+           printf("0");
+       }
+       //printf("\n");
+       for(j=1;j<=s;j++){
+           printf("*");
+       }
+       printf("\n");
+   }
+   
+ //printf("\n");
+   
+   for(s=1;s<satir;s++){
+       for(i=satir-1;i>s;i--){
+           printf("*");
+       }
+       //printf("\n");
+       for(j=1;j<=s;j++){
+           printf("0");
+       }
+       //printf("\n");
+       for(i=0;i<s;i++){
+           printf("0");
+       }
+       //printf("\n");
+        for(j=satir-1;j>i;j--){
+            printf("*");
+    }
+        printf("\n");
+   }
+   
+}
