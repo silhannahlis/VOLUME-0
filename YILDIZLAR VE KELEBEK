@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//"0" YAZILI LERLERE " " BOŞLUK YAZ...   ;)
 int main(void) {
    int satir,s,i,j;
    printf("sayı gir:");scanf("%d",&satir);
