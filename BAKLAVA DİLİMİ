@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int j,i,s,satir;
+    printf("satır sayısı:");scanf("%d",&satir);
+    for(s=0;s<satir;s++){
+        for(i=satir-1;i>s;i--){
+            printf(".");
+        }
+        for(j=0;j<s;j++){
+            printf("*");
+        }
+         for(j=0;j<s;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(s=0;s<satir;s++){
+        for(j=0;j<s;j++){
+            printf(".");
+        }
+        for(i=satir-1;i>s;i--){
+            printf("*");
+        }
+         for(i=satir-1;i>s;i--){
+            printf("*");
+        }
+        printf("\n");
+    }
+
+}
