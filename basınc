@@ -1,0 +1,16 @@
+// basınç hesaplama
+#include <stdio.h>
+
+int main() {
+   float pressure, constantR;
+   constantR=0.82;
+   float numberOfMoles, volume, heat;
+   printf("sıcaklık/heeat :");scanf("%f",&heat);
+   printf("\nhacim/voume: ");scanf("%f",&volume);
+   printf("\nmolSayısı/numberOfMoles");scanf("%f",&numberOfMoles);
+   
+   pressure = (numberOfMoles *constantR *heat) /volume;
+   printf("\n%f",pressure);
+
+    return 0;
+}
